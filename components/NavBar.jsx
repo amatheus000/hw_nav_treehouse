@@ -1,11 +1,24 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => (
   <nav>
-    <a href='#'>Home</a>
-    <a href='#'>Burger King</a>
-    <a href='#'>Popeyes</a>
-    <a href='#'>Tim Hortons</a>
+  <ul className='main-nav'>
+      <li>
+        <NavLink exact to='/'>
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to='/bk'>Burger King</NavLink>
+      </li>
+      <li>
+        <NavLink to='/plk'>Popeyes</NavLink>
+      </li>
+      <li>
+        <NavLink to='/th:adjective'>TimHortons</NavLink>
+      </li>
+    </ul>
   </nav>
 );
 
